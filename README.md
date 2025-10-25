@@ -9,7 +9,7 @@ The Pinocchio Vault is a Solana program that allows users to deposit and withdra
 - **Withdraw:** Users can withdraw a given amount of SOL into their vault. If the remaining amount is inferior to the rent exempt lamports, all funds are witdrawn to user wallet and the accounts are closed.
 
 ## How it works?
-- Each vault state account is a PDA derived from a static seed (b"vault") and from the user's public key. This is a state account owned by the program to save the vault state bump and the vault bump.
+- Each vault state account is a PDA derived from a static seed (b"state") and from the user's public key. This is a state account owned by the program to save the vault state bump and the vault bump.
 - Each vault account is a PDA derived from a static seed (b"vault") and from the vault state account address. This is a system account to hold the SOL funds.
 - First time the user deposits, it needs to ensure that enough lamports are being transferred to accomodate for rent exempt of the vault account.
 - When withdrawing, if requested amount will leave the vault without enough lamports for rent exempt, then all SOL is transferred out of the vault and the accounts are closed.

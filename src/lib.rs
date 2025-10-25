@@ -13,6 +13,7 @@ const ID: Pubkey = five8_const::decode_32_const("7777777777777777777777777777777
 mod state;
 mod instructions;
 use instructions::*;
+mod tests;
 
 pub fn process_instruction(
     program_id: &Pubkey,
