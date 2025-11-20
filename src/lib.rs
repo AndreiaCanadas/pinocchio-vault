@@ -1,9 +1,11 @@
-#![no_std]
+// COMMENTED OUT FOR TESTING WITH LITESVM
+//#![no_std]
+// use pinocchio::nostd_panic_handler;
 
-use pinocchio::{account_info::AccountInfo, entrypoint, nostd_panic_handler, pubkey::Pubkey, program_error::ProgramError, ProgramResult};
+use pinocchio::{account_info::AccountInfo, entrypoint, pubkey::Pubkey, program_error::ProgramError, ProgramResult};
 
 entrypoint!(process_instruction);
-nostd_panic_handler!();
+// nostd_panic_handler!();
 
 //pinocchio_pubkey::declare_id!("4ibrEMW5F6hKnkW4jVedswYv6H6VtwPN6ar6dvXDN1nT");
 
