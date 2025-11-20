@@ -1,6 +1,6 @@
 # Pinocchio Vault
-This is a simple Solana smart-contract to secure funds (SOL) in a vault PDA, built with Pinocchio framework.
 ---
+This is a simple Solana smart-contract to secure funds (SOL) in a vault PDA, built with Pinocchio framework.
 
 ## What is it?
 The Pinocchio Vault is a Solana program that allows users to deposit and withdraw SOL (lamports) into a vault account that is uniquely derived from each user, using a PDA. This ensures that the program is the only authority able to move the funds in and out the vault and that the owner is the only one that can access their vault.
