@@ -74,7 +74,7 @@ pub fn process_deposit_instruction(accounts: &[AccountInfo], data: &[u8]) -> Pro
     let vault_pda = pinocchio_pubkey::derive_address(&vault_seed, None, &crate::ID);
     assert_eq!(&vault_pda, vault.key());
 
-    // Prepare seeds for signing
+    // Prepare seeds for signing account creation
     let signer_seed = [Seed::from(b"state"), Seed::from(user.key().as_ref()), Seed::from(&state_bump)];
     let signers = Signer::from(&signer_seed);
 
